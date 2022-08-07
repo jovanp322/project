@@ -1,0 +1,159 @@
+<!doctype HTML>
+<html>
+    <head>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./mobile-style.css">
+        <script src="https://kit.fontawesome.com/62ccd9d508.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+    </head>
+    <body>
+        <header>
+            <nav id="nav">
+                <div>
+                    <img src="emLogo.png" class="egLogo" tabindex="0">
+                    <div id="propNav">
+                        <ul id="navProperties" class="rightnav">
+                            <li tabindex="0"><a>STORE</a></li>
+                            <li tabindex="0"><a>FAQ</a></li>
+                            <li tabindex="0"><a>HELP</a></li>
+                            <li tabindex="0"><a>UNREAL ENGINE</a></li>
+                        </ul>
+                    </div>
+                    <div class="user rightnav" tabindex="0"><a><img src="user-icon.png">SIGN IN</a></div>
+                    <div class="nav-button rightnav" tabindex="0"><a>DOWNLOAD</a></div>
+                    <div class="rightnav" id="language-icon" tabindex="0"><img src="planet-img.png">
+                        <ul>
+                            <li>العربية</li>
+                            <li>Deutsch</li>
+                            <li>Español (Spain)</li>
+                            <li>Español (LA)</li>
+                            <li>Français</li>
+                            <li>Italiano</li>
+                            <li>日本語</li>
+                            <li>한국어</li>
+                            <li>Polski</li>
+                            <li>Português (Brasil)</li>
+                            <li>Русский</li>
+                            <li>ไทย</li>
+                            <li>Türkçe</li>
+                            <li>简体中文</li>
+                            <li>繁體中文</li>
+                        </ul>
+                    </div>
+
+                    <div id="gray-nav" class="rightnav"></div>
+
+                    <div id="wrapper">
+                        <div class="wrapper" id="btn">
+            
+                            <a href="#" class="nav">
+                                <div class="one"></div>
+                                <div class="two"></div>
+                                <div class="three"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div id="sticky-div">
+                <input type="text" placeholder="Search store" tabindex="0">
+                <img src="lupa1.png">
+                <div id="discover">Discover</div>
+                <ul>
+                    <li tabindex="0">Discover</li>
+                    <li tabindex="0">Browse</li>
+                    <li tabindex="0">News</li>
+                </ul>
+            </div>
+
+            <div id="main-games">
+                <div id="text-area">
+                    <h6>PLAY MORE</h6>
+                    <h1>Free Games</h1>
+                    <p>Epic Games Store gives you a free game every week. Come back often for the exclusive offers. Download a free game to play or join a free-to-play game community today.
+                    </p>
+                </div>
+
+                <div id="two-games">
+                    <div class="two-games-container-first">
+                        <img src="lms-game.jpg">
+                        <div><a>FREE NOW</a></div>
+                        <p><a>Lawn Mowing Simulator</a></p>
+                        <p>Free Now - Aug 04 at 05:00 PM</p>
+                    </div>
+                    <div class="two-games-container-second">
+                        <img src="unrailed-game.jpg">
+                        <div><a>COMING SOON</a></div>
+                        <p><a>Unrailed!</a></p>
+                        <p>Free Aug 04 - Aug 11</p>
+                    </div>
+
+                    <div id="big-section">
+                        <p>Free To Play</p>
+                        <section>
+                            <div></div>
+                            <p><a>Fall Guys</a></p><p>Free</p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+
+        </footer>
+
+
+        <script>
+            window.onscroll = function() {myFunction()};
+            
+            var navbar = document.getElementById("sticky-div");
+            var sticky = navbar.offsetTop;
+            
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+
+
+            var navBarButton = document.getElementsByClassName('wrapper');
+            var navBar = document.getElementsByClassName('rightnav');
+            var navButton = document.getElementById('btn');
+
+            var style = getComputedStyle(navBar[0]);
+
+            navBarButton[0].addEventListener('click', function(){
+                
+                if (style.left > '0px') {
+                        for (var i = 0; i < navBar.length; i++) {
+                            navBar[0].style.left = '0%'; // ul
+                            navBar[1].style.left = '10%'; // user
+                            navBar[2].style.left = '10%'; // download 
+                            navBar[3].style.left = '70%'; // lang-icon
+                            navBar[4].style.left = '10%'; // gray-nav
+                    }
+                    navButton.style.backgroundColor = "#252525";
+                } else {
+                    for (var i = 0; i < navBar.length; i++) {
+                            navBar[i].style.left = '100%';
+                        }
+                        navButton.style.backgroundColor = "#0078f2";
+                }
+                // navBar[0].style.left = '400px';
+            });
+            
+            // function left() {
+            //     for (var i = 0; i < navBar.length; i++) {
+            //         navBar[i].style.left = '200px';
+            //     }
+            // }
+            // navBarButton.addEventListener('click', left);
+            </script>
+    </body>
+</html>

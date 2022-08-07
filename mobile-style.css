@@ -1,0 +1,333 @@
+@media screen and (max-width: 600px) {
+    html,body, body header nav > div {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    header {
+        height: 3.3em;
+    }
+
+    #two-games .two-games-container-second {
+        top: 86px;
+    }
+
+    .egLogo {
+        z-index: 7;
+    }
+
+    .two-games-container-first img {
+        width: 30%;
+    }
+
+    #nav > div {
+        position: relative;
+        height: 100vh;
+    }
+
+    #navProperties {
+        left: 100%;
+    }
+
+    .rightnav {
+        position: absolute;
+        z-index: 5;
+        bottom: 10px;
+        transition: .2s;
+    }
+
+    #two-games .two-games-container-first {
+        width: 100%;
+        left: 2%;
+        height: 60vw;
+    }
+
+    #two-games .two-games-container-second {
+        width: 100%;
+        height: 60vw;
+        left: 2%;
+    }
+
+    #two-games {
+        position: relative;
+        /* left: 179px; */
+        left: 1%;
+        top: 82px;
+        width: 94%;
+        height: 400px;
+    }
+
+    #big-section {
+        top: 300px;
+        left: 3%;
+    }
+
+    #big-section section {
+
+    }
+
+    #sticky-div {
+        height: 80px;
+    }
+
+    #text-area {
+        left: 3%;
+        width: 95%;
+    }
+
+    #text-area h1 {
+        font-size: 30px;
+        padding: 17px 0 0 0;
+    }
+
+    #sticky-div input {
+        left: 3%;
+        top: 25%;
+    }
+
+    #sticky-div ul {
+        display: none; 
+    }
+
+    #discover {
+        position: relative;
+        display: inline-block;
+        padding: 18.2px 13.3px;
+        cursor: pointer;
+        font-family: 'OpenSans',sans-serif,arial;
+        font-weight: 600;
+        font-size: 15px;
+        color: #787878;
+        transition: 0.2s;
+        top: 17%;
+        left: 6%;
+    }
+
+    #big-section div {
+        width: 50%;
+        height: 80vw;
+    }
+
+    #big-section {
+        left: 0;
+        position: relative;
+        top: 222px;
+        width: 100%;
+        height: 60vw;
+        float: left;
+    }
+
+    #big-section div p a {
+        font-family: 'Brutal',sans-serif;
+        color: white;
+        font-size: 13px;
+        letter-spacing: 0.8px;
+        line-height: 1.4;
+        font-weight: 400;
+    }
+
+    #big-section section p {
+        position: relative;
+        top: -50px;
+        font-family: 'Brutal',sans-serif;
+        color: white;
+        font-size: 13px;
+        letter-spacing: 0.8px;
+        line-height: 1.4;
+        font-weight: 400;
+        padding-top: 10px;
+    }
+
+    #div {
+        position: relative;
+        width: 100%;
+        height: 400px;;
+        background-color: red;
+        top: 200px;
+    }
+
+    #wrapper .wrapper a div {
+        height: 2px;
+        z-index: 1;
+    }
+    /* #nav div {
+        height: 2px;
+        z-index: 1;
+    } */
+    #wrapper {
+        position: relative;
+        height: 52px;
+        bottom: 70px;
+        z-index: 4;
+    }
+    .wrapper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 89%;
+        background-color: #0078f2;
+    }
+    .btn_one {
+        text-decoration: none;
+        color: white;
+        font-weight: 100;
+        border: 1px #fbbc05 solid;
+        padding: 1em 3em;
+        border-radius: 100px;   
+    }
+    
+    .nav div {
+        height: 4px;
+        background-color: white;
+        margin: 6px 0;
+        border-radius: 25px;
+        transition: 0.3s;
+    }
+    .nav {
+        position: relative;
+        width: 30px;
+        display: block;
+        margin: 1em 0 0 1em;
+        top: 16px;
+        right: 7px;
+    }
+    .one {
+        width: 33px;
+    }
+    .two {
+        width: 33px;
+    }
+    .three {
+        width: 33px;
+    }
+    
+    .nav:hover div {
+        width: 30px;
+    }    
+
+    #propNav {
+        width: 90%;
+        position: absolute;
+        height: 200px;
+        display: block;
+        left: 10%;
+        margin: 0;
+        z-index: 3;
+    }
+
+    #propNav ul {
+        z-index: 1;
+    }
+
+    #nav div #propNav {
+        height: 217.5px;
+    }
+    
+    #propNav ul li {
+        position: relative;
+        top: 0px;
+        display: block;
+        padding: 10px 12px;
+        cursor: pointer;
+        border-bottom: .1px solid #303030;
+    }
+    
+    #propNav ul li a {
+        position: relative;
+        font-family: 'OpenSans',sans-serif,arial;
+        font-size: .9em;
+        color: #bdbdbd;
+        font-weight: 700;
+        left: 2%;
+    }
+
+    #nav div #gray-nav {
+        position: absolute;
+        top: 0;
+        width: 90%;
+        height: 100%;
+        left: 100%;
+        background-color: #2a2a2a;
+        z-index: 2;
+        overflow-y: hidden;
+    }
+
+    #propNav ul li::before {
+        display: none;
+    }
+
+    .nav-button {
+        bottom: 0;
+        position: absolute;
+        display: block;
+        width: 90%;
+        height: 52px;
+        float: right;
+        left: 100%;
+        padding: 18.7px 72px 18.7px 33px;
+        font-family: 'OpenSans',sans-serif,arial;
+        font-size: .62em;
+        color: #e6e6e6;
+        font-weight: 500;
+        background-color: #0078f2;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    .nav-button a {
+        position: relative;
+        left: 46%;
+        top: 30%;
+    }
+
+    .user {
+        position: absolute;
+        right: 15px;
+        left: 100%;
+        width: 60%;
+        height: 52px;
+        bottom: 52px;
+        float: right;
+        padding: 18.7px 72px 18.7px 33px;
+        font-family: 'OpenSans',sans-serif,arial;
+        font-size: .62em;
+        color: #e6e6e6;
+        font-weight: 500;
+        background-color: #2F2F2F;
+        border: 1px solid #464646;
+        cursor: pointer;
+        box-shadow: 0px -2px 10px #2F2F2F, 0px -2px 10px black;
+    }
+
+    .user a {
+        position: relative;
+        bottom: 12px;
+        left: 50%;;
+    }
+
+    .user a img {
+        right: 20%;
+        top: 50%;
+        width: 22px;
+        height: 22px;
+    }
+
+    #language-icon {
+        position: absolute;
+        width: 30%;
+        bottom: 52px;
+        left: 100%;
+        border-top: 1px solid #464646;
+        background-color: #2F2F2F;
+        box-shadow: 0px -2px 10px #2F2F2F, 5px -2px 10px black;
+    }
+
+    #language-icon img {
+        position: relative;
+        width: 27px;
+        height: 27px;
+        top: 12px;
+        left: 40%;
+    }
+}

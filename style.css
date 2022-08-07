@@ -1,0 +1,506 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: solid 1px red; */
+}
+
+html, body {
+    overflow-x: hidden; 
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+header {
+    height: 52px;
+    background-color: #2A2A2A;
+}
+
+#propNav {
+    position: relative;
+    height: 52px;
+    display: inline-block;
+    left: 14px;
+    margin: 0;
+}
+
+#nav div {
+    height: 52px;
+}
+
+#propNav ul li {
+    position: relative;
+    top: -22px;
+    display: inline-block;
+    padding: 18.2px 12px;
+    cursor: pointer;
+}
+
+#propNav ul li a {
+    font-family: 'OpenSans',sans-serif,arial;
+    font-size: .71em;
+    color: #bdbdbd;
+    font-weight: 500;
+}
+
+#propNav ul li:hover > a {
+    color: white;
+}
+
+#propNav ul li::before {
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 0px;
+    left: 0;
+    position: absolute;
+    transition: height .2s ease-in-out;
+    width: 100%;
+    background: #0078f2;
+}
+
+#propNav ul li:hover:before {
+    height: 5.5px;
+}
+
+/* #propNav ul li:hover {
+    border-bottom: 6px solid #0078F2;
+    transition: 0.2s;
+    color: white;
+} */
+
+#navProperties {
+    position: relative;
+    top: 0px;
+}
+
+#propNav ul li:first-child::before {
+    height: 5.5px;
+}
+
+.egLogo {
+    position: relative;
+    width: 52px;
+    height: 52px;
+    top: 0px;
+    left: 7px;
+    cursor: pointer;
+}
+
+.user {
+    float: right;
+}
+
+.nav-button {
+    position: relative;
+    width: 128px;
+    height: 52px;
+    float: right;
+    left: 228px;
+    padding: 18.7px 72px 18.7px 33px;
+    font-family: 'OpenSans',sans-serif,arial;
+    font-size: .62em;
+    color: #e6e6e6;
+    font-weight: 500;
+    background-color: #0078f2;
+    cursor: pointer;
+}
+
+.nav-button:hover {
+    background-color: #007ff7;
+}
+
+.user {
+    position: relative;
+    right: 15px;
+    width: 228px;
+    height: 52px;
+    float: right;
+    padding: 18.7px 72px 18.7px 33px;
+    font-family: 'OpenSans',sans-serif,arial;
+    font-size: .62em;
+    color: #e6e6e6;
+    font-weight: 500;
+    background-color: #2A2A2A;
+    cursor: pointer;
+}
+
+.user a {
+    position: relative;
+    bottom: 7px;
+    left: 2px;
+}
+
+.user a img {
+    position: relative;
+    width: 17px;
+    height: 17px;
+    top: 4.5px;
+    right: 13px;
+}
+
+#language-icon {
+    position: relative;
+    left: 113px;
+    float: right;
+    width: 55px;
+    height: 52px;
+    background: #2A2A2A;
+    cursor: pointer;
+}
+
+#language-icon img {
+    position: relative;
+    width: 17.5px;
+    height: 17.5px;
+    top: 16px;
+    left: 16px;
+}
+
+main {
+    height: 3000px;
+    background-color:rgb(18, 18, 18);
+}
+
+#language-icon ul {
+    position: relative;
+    top: 30px;
+    right: 68px;
+    display: none;
+    z-index: 1;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#language-icon ul li {
+    font-family: 'OpenSans',sans-serif,arial;
+    font-size: 11px;
+    color: #bdbdbd;
+    padding: 9px 15px;
+    width: 190px;
+    text-align: center;
+    background-color: #2A2A2A;
+}
+
+#language-icon ul li:hover {
+    color: white;
+}
+
+#language-icon:hover > ul {
+    display: block;
+    opacity: 1;
+}
+
+#sticky-div {
+    position: sticky;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(18, 18, 18);
+}
+
+#sticky-div input {
+    position: relative;
+    left: 180px;
+    top: 30px;
+    width: 158px;
+    height: 40px;
+    border-radius: 24px;
+    background-color: rgb(32, 32, 32);
+    border: none;
+    outline: none;
+}
+
+#sticky-div input:focus {
+    background-color: #292929;
+}
+
+#sticky-div input[type=text] {
+    color: white;
+    text-align:calc(10px + 10px);
+    padding: 0 0 0 38px;
+}
+
+#sticky-div input::placeholder {
+    position: relative;
+    font-family: 'OpenSans',sans-serif,arial;
+    color: #adadad;
+    left: 0px;
+}
+
+#sticky-div img {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    left: 192px;
+    top: 44px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+#discover {
+    display: none;
+}
+
+#sticky-div ul {
+    position: absolute;
+    display: inline-block;
+    padding: 18.2px 12px;
+    cursor: pointer;
+    left: 343px;
+    top: 6px;
+}
+
+#sticky-div ul li {
+    display: inline-block;
+    padding: 18.2px 13.3px;
+    cursor: pointer;
+    font-family: 'OpenSans',sans-serif,arial;
+    font-weight: 600;
+    font-size: 13.2px;
+    color: #787878;
+    transition: 0.2s;
+}
+
+#sticky-div ul li:hover {
+    color: white;
+}
+
+#text-area {
+    position: relative;
+    width: 400px;
+    left: 12.3%;
+    top: 30px;
+}
+
+#text-area h6 {
+    font-family: 'Brutal',sans-serif;
+    font-weight: bold;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    line-height: 1.3333;
+    color: white;
+}
+
+#text-area h1 {
+    font-family: 'Brutal',sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    letter-spacing: -0.5px;
+    line-height: 1;
+    padding: 10px 0 0 0;
+    color: white;
+}
+
+#text-area p {
+    font-family: 'Brutal',sans-serif;
+    font-size: 14px;
+    padding: 10px 10px 0 0;
+    letter-spacing: 0.2px;
+    line-height: 1.4;
+    color: rgba(245, 245, 245, 0.6);
+    letter-spacing: 0.25px;
+}
+
+#two-games {
+    position: relative;
+    /* left: 179px; */
+    left: 12.3%;
+    top: 82px;
+    width: 76%;
+    height: 400px;
+}
+
+#two-games .two-games-container-first {
+    position: relative;
+    float: left;
+    width: 525px;
+    height: 320px;
+    background: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+#two-games .two-games-container-first img {
+    width: 100%;
+    height: 100%;
+}
+
+.two-games-container-first div {
+    position: absolute;
+    width: 100%;
+    padding: 5px;
+    background-color:#0078f2;
+    bottom: 0;
+    border-radius: 0 0 4px 4px;
+}
+
+#two-games .two-games-container-first img {
+    opacity: 1;
+    transform: .5s ease-in-out;
+    border-radius: 4px;
+}
+
+#two-games .two-games-container-first img:hover {
+    opacity: 0.9;
+    transition: .2s;
+}
+
+.two-games-container-first div a {
+    font-family: 'Brutal',sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    line-height: 1.3333;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    display: block;
+    text-align: center;
+}
+
+.two-games-container-first p a {
+    font-family: 'Brutal',sans-serif;
+    color: white;
+    font-size: 13px;
+    letter-spacing: 0.8px;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+.two-games-container-first p {
+    position: relative;
+    top: 14px;
+    color: gray;
+    font-family: 'Brutal',sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.8px;
+    line-height: 1.4;
+    padding-top: 5px;
+}
+
+#two-games .two-games-container-second {
+    position: relative;
+    left: 14px;
+    float: left;
+    width: 525px;
+    height: 320px;
+    background: white;
+    cursor: pointer;
+    transform: .2s ease-in-out;
+    border-radius: 4px;
+    border-radius: 8px;
+}
+
+#two-games .two-games-container-second img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+#two-games .two-games-container-second img:hover {
+    opacity: 0.9;
+    transition: .2s;
+}
+
+.two-games-container-second div {
+    position: absolute;
+    width: 100%;
+    padding: 5px;
+    background-color:black;
+    bottom: 0;
+    border-radius: 0 0 4px 4px;
+}
+
+.two-games-container-second div a {
+    font-family: 'Brutal',sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    line-height: 1.3333;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    display: block;
+    text-align: center;
+}
+
+.two-games-container-second p a {
+    font-family: 'Brutal',sans-serif;
+    color: white;
+    font-size: 13px;
+    letter-spacing: 0.8px;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+.two-games-container-second p {
+    position: relative;
+    top: 14px;
+    color: gray;
+    font-family: 'Brutal',sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.8px;
+    line-height: 1.4;
+    padding-top: 5px;
+}
+
+#big-section {
+    position: relative;
+    left: 12.2%;
+    top: 132px;
+    width: 76%;
+    height: 1000px;
+}
+
+#big-section > p {
+    font-family: 'Brutal',sans-serif;
+    align-items: center;
+    color: rgb(245, 245, 245);
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+#big-section section {
+    position: relative;
+    top: 20px;
+    width: 100%;
+    height: 900px;
+}
+
+#big-section div {
+    width: 254px;
+    height: 339px;
+    background-image: url(fallguys-game.jfif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+}
+
+#big-section div p a {
+    font-family: 'Brutal',sans-serif;
+    color: white;
+    font-size: 13px;
+    letter-spacing: 0.8px;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+#big-section div p {
+    position: relative;
+    top: 347px;
+    font-family: 'Brutal',sans-serif;
+    color: white;
+    font-size: 13px;
+    letter-spacing: 0.8px;
+    line-height: 1.4;
+    font-weight: 400;
+    padding-top: 10px;
+}
+
